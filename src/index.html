@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Kyrilliza</title>
+    <!-- @if ENVIRONMENT='development' -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- @endif -->
+    <!-- @if ENVIRONMENT='production' -->
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <!-- @endif -->
+</head>
+
+<body>
+    <div class="content">
+        <!--Start of - Content-Wrapper-->
+
+        @@include('main.html')
+
+        <!--End of - Content-Wrapper-->
+    </div>
+    <!-- @if ENVIRONMENT='development' -->
+    <script type="text/javascript" src="./js/scripts-vendor.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+    <!-- @endif -->
+    <!-- @if ENVIRONMENT='production' -->
+    <script type="text/javascript" src="./scripts.min.js"></script>
+    <!-- @endif -->
+    <script>
+
+    </script>
+</body>
+
+</html>
